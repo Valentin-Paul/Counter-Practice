@@ -8,9 +8,9 @@ function App() {
 const [number, setNumber] = useState(0);
 
 const decrease = ()=>{
-  setNumber((prevNumber)=>{
+  if(number>0){setNumber((prevNumber)=>{
     return prevNumber -1;
-  })
+  })}
 }
 
 const increase = ()=>{
