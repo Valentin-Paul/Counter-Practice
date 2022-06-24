@@ -19,6 +19,10 @@ const increase = ()=>{
   })
 }
 
+const reset = ()=>{
+  setNumber(0)
+}
+
   return (
     <div className="App">
       <header className="App-header">
@@ -28,6 +32,7 @@ const increase = ()=>{
         <button onClick={()=>{decrease()}}>-</button>
         <button onClick={()=>{increase()}}>+</button>
       </div>
+        <button onClick={()=>{reset()}}>Reset</button>
       <p>
         Click Buttons to increase/decrease the number!
         </p>
